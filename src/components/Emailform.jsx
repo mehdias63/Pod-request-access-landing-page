@@ -15,7 +15,7 @@ function EmailForm() {
       setError("Email is required");
       setSuccess("");
     } else if (!isValidEmail(email)) {
-      setError("Please provide a valid email");
+      setError("Oops! Please check your email");
       setSuccess("");
     } else {
       setError("");
@@ -37,14 +37,14 @@ function EmailForm() {
           value={email}
           onChange={handleInputChange}
           placeholder="Email Address"
-          className="w-full rounded-full placeholder:text-white placeholder:opacity-50 px-6 py-3 bg-dark-gray"
+          className="w-full rounded-full text-white placeholder:text-white placeholder:opacity-50 px-6 py-3 bg-dark-gray"
         />
         <button className="w-full sm:absolute right-0 h-full px-7 py-3 sm:px-10 rounded-full cursor-pointer bg-light-green mt-6 sm:mt-0">
           Request Access
         </button>
       </div>
-      {error && <div style={{ color: "red" }}>{error}</div>}
-      {success && <div style={{ color: "green" }}>{success}</div>}
+      {error && <div className="text-xs text-red">{error}</div>}
+      {success && <div className="text-xs text-light-green">{success}</div>}
     </form>
   );
 }

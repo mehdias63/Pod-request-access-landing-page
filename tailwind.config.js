@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      man: ["Manrope"],
+      chivo: ["Chivo"],
     },
     extend: {
       colors: {
@@ -11,6 +11,7 @@ export default {
         "dark-gray": "#2C344B",
         "black": "#121725",
         "light-gray": "#C2CBE5",
+        "red":"#FB3E3E",
       },
     },
   },
