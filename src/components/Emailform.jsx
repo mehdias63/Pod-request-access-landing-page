@@ -30,8 +30,8 @@ function EmailForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full md:pr-4 p-4 md:p-0">
-      <div className="w-full flex flex-col mb-4 md:mb-6 relative">
+    <form onSubmit={handleSubmit} className="w-full">
+      <div className="sm:w-[22rem] md:w-[25rem] lg:w-[27rem] flex flex-col mb-4 md:mb-6 relative">
         <input
           type="email"
           value={email}
@@ -39,7 +39,7 @@ function EmailForm() {
           placeholder="Email Address"
           className="w-full rounded-full text-white placeholder:text-white placeholder:opacity-50 px-6 py-3 bg-dark-gray"
         />
-        <button className="w-full sm:absolute right-0 h-full px-7 py-3 sm:px-10 rounded-full cursor-pointer bg-light-green mt-6 sm:mt-0">
+        <button className="sm:absolute h-full px-7 py-3 sm:px-10 rounded-full cursor-pointer bg-light-green mt-5 sm:mt-0 sm:ml-[9.3rem] md:ml-[12.3rem] lg:ml-[14.3rem]">
           Request Access
         </button>
       </div>
