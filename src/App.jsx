@@ -3,14 +3,16 @@ import EmailForm from "./components/Emailform";
 
 function App() {
   return (
-    <main className="bg-[url(/images/mobile/image-host.jpg)] bg-no-repeat bg-cover sm:bg-none min-h-screen bg-blend-multiply bg-black flex flex-col items-center px-6 py-14 font-chivo sm:p-0">
-      <div className="sm:flex sm:items-start sm:gap-10">
-        <img src="/images/desktop/logo.svg" className="sm:pl-8 sm:pt-12" />
-        <div className="sm:bg-[url(/images/tablet/image-host.jpg)] lg:bg-[url(/images/desktop/image-host.jpg)] bg-no-repeat bg-cover hidden sm:block h-[30rem] w-[32rem] sm">
-          1
-        </div>
-      </div>
-      <header className="flex flex-col justify-center items-center mt-12 sm:w-[35rem] sm:h-[32rem] sm:bg-black sm:mt-[-15rem] lg:w-[45rem] md:mr-[10rem] lg:mr-[20rem] sm:items-start sm:p-4">
+    <div className="bg-[url(/images/mobile/image-host.jpg)] bg-no-repeat bg-cover sm:bg-none h-[50rem] min-h-screen bg-blend-multiply bg-black flex flex-col items-center px-6 py-14 font-chivo sm:p-0 max-w-[90rem] mx-auto">
+      <header className="sm:flex sm:items-start sm:gap-10 md:gap-[12rem] lg:gap-[10rem]">
+        <img
+          src="/images/desktop/logo.svg"
+          className="sm:pl-8 sm:pt-12 md:ml-12 lg:ml-36"
+          alt="logo"
+        />
+        <div className="sm:bg-[url(/images/tablet/image-host.jpg)] lg:bg-[url(/images/desktop/image-host.jpg)] bg-no-repeat bg-cover hidden sm:block h-[30rem] w-[32rem] lg:ml-auto lg:w-[55rem] lg:h-[40rem] z-10"></div>
+      </header>
+      <main className="absolute flex flex-col justify-center p-6 items-center sm:items-start mt-12 sm:w-[35rem] md:w-[40rem] lg:w-[45rem] sm:h-[32rem] sm:bg-black left-4 top-[6rem] lg:top-[8rem] z-20 h-full">
         <h1 className="text-light-green uppercase text-[1.625rem] md:text-[3rem] lg:text-[3.25rem] font-light leading-[2.375rem] md:leading-[3.5rem] lg:leading-[3.875rem] text-center sm:text-left">
           Publish your podcasts
           <br /> <span className="text-white">everywhere.</span>
@@ -21,16 +23,19 @@ function App() {
           and more!
         </p>
         <section className="flex gap-3 my-8 sm:order-1 lg:gap-14">
-          <img src="/images/desktop/spotify.svg" />
-          <img src="/images/desktop/apple-podcast.svg" />
-          <img src="/images/desktop/google-podcasts.svg" />
-          <img src="/images/desktop/pocket-casts.svg" />
+          <img src="/images/desktop/spotify.svg" alt="spotify"/>
+          <img src="/images/desktop/apple-podcast.svg" alt="apple-podcast"/>
+          <img src="/images/desktop/google-podcasts.svg" alt="google-podcasts"/>
+          <img src="/images/desktop/pocket-casts.svg" alt="pocket-casts"/>
         </section>
         <div className="w-full sm:w-auto">
           <EmailForm />
         </div>
-      </header>
-    </main>
+      </main>
+      <footer className="absolute bottom-[-13rem] left-4 md:right-auto order-last ml-8 hidden self-start sm:block lg:-bottom-[3rem] lg:left-auto lg:right-0 lg:top-[36rem] xl:right-[16rem] z-30">
+        <img src="/images/desktop/bg-pattern-dots.svg" alt="pattern"/>
+      </footer>
+    </div>
   );
 }
 
