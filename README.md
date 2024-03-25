@@ -23,8 +23,8 @@ This is a solution to the [Pod request access landing page challenge on Frontend
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mehdias63/Pod-request-access-landing-page)
-- Live Site URL: [Add live site URL here](https://pod-request-access-landing-page-weld.vercel.app)
+- Solution URL: [https://github.com/mehdias63/Pod-request-access-landing-page]
+- Live Site URL: [https://pod-request-access-landing-page-weld.vercel.app]
 
 ## My process
 

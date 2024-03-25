@@ -22,14 +22,27 @@ function App() {
           your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
           and more!
         </p>
-        <section className="flex gap-3 my-8 sm:order-1 lg:gap-14">
-          <img src="/images/desktop/spotify.svg" alt="spotify" />
-          <img src="/images/desktop/apple-podcast.svg" alt="apple-podcast" />
+        <section className="flex items-center gap-3 my-8 sm:order-1 md:gap-8 lg:gap-14">
+          <img
+            src="/images/desktop/spotify.svg"
+            alt="spotify"
+            className="w-16 sm:w-20"
+          />
+          <img
+            src="/images/desktop/apple-podcast.svg"
+            alt="apple-podcast"
+            className="w-16 sm:w-20"
+          />
           <img
             src="/images/desktop/google-podcasts.svg"
             alt="google-podcasts"
+            className="w-16 sm:w-20"
           />
-          <img src="/images/desktop/pocket-casts.svg" alt="pocket-casts" />
+          <img
+            src="/images/desktop/pocket-casts.svg"
+            alt="pocket-casts"
+            className="w-16 sm:w-20"
+          />
         </section>
         <div className="w-full sm:w-auto">
           <EmailForm />
